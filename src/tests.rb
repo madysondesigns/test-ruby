@@ -40,3 +40,6 @@ rescue
 else
     puts "FAIL: error wasn't raised"
 end
+
+# puts "TEST: a todo should have items"
+
