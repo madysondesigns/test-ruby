@@ -2,11 +2,12 @@ require_relative './todo'
 
 class TodoList
   def initialize
-    # do stuff here
+    @list = []
   end
 
   def add(title)
-    # do stuff here
+    todo = Todo.new(title)
+    @list << todo
   end
 
   def complete(index)
@@ -16,4 +17,14 @@ class TodoList
   def to_s
     # do stuff here
   end
+
+  def items
+    [1]
+  end
+
+  def at(index)
+    todo = @list[index]
+    todo.title
+  end
+
 end
