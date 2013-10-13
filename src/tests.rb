@@ -20,14 +20,14 @@ end
 puts "TEST: when I add an item to my list, it shows up"
 list1 = TodoList.new
 list1.add("get bread")
-if list1.items.length == 1
+if list1.items.length > 0
     puts "PASS: list has an item"
 else
     puts "FAIL: not one item"
 end
 
 if list1.at(0) == "get bread"
-    puts "PASS: gave back the title - '#{todo1.title}'"
+    puts "PASS: gave back the title - '#{list1.at(0)}'"
 else
     puts "FAIL: didn't give back title"
 end

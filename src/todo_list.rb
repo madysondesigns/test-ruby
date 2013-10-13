@@ -18,9 +18,8 @@ class TodoList
     # do stuff here
   end
 
-  def items(name)
-    item = Item.new(name)
-    @item << @list
+  def items
+    @list
   end
 
   def at(index)
